@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean@Home - Professional Cleaning Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 12px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 20px;
+        }
+
+        .services h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:active {
+            transform: scale(0.98);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 14px;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        /* Appointment Section */
+        .appointment {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .appointment h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .contact-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 18px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            color: white;
+        }
+
+        .btn:active {
+            transform: scale(0.96);
+        }
+
+        .btn-call {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #1da851 100%);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-icon {
+            font-size: 24px;
+        }
+
+        /* Phone Number Display */
+        .phone-number {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .service-card {
+                padding: 12px;
+            }
+
+            .btn {
+                padding: 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>🏠 Clean@Home</h1>
+        <p>Professional Cleaning Services at Your Doorstep</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h3>Car Clean</h3>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚽</div>
+                <h3>Toilet Clean</h3>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔥</div>
+                <h3>Kitchen Chimney Clean</h3>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🍽️</div>
+                <h3>Home Utensils Clean</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Section -->
+    <div class="appointment">
+        <h2>Book Your Appointment</h2>
+        <div class="contact-buttons">
+            <a href="tel:+919900456607" class="btn btn-call">
+                <span class="btn-icon">📞</span>
+                <span>Call Now</span>
+            </a>
+            <a href="https://wa.me/919900456607" class="btn btn-whatsapp">
+                <span class="btn-icon">💬</span>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+        <div class="phone-number">
+            <strong>+91 99004 56607</strong>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Clean@Home. All rights reserved.</p>
+    </div>
+</body>
+</html>
